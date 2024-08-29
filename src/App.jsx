@@ -8,9 +8,12 @@ import Calculator from "./pages/Calculator/Calculator";
 import VehicleDetails from "./pages/VehicleDetails/VehicleDetails";
 import Gallery from "./pages/Gallery/Gallery";
 import SellCar from "./pages/SellCar/SellCar";
+import LocomotiveScroll from "locomotive-scroll";
+
 
 
 function App() {
+  const locomotiveScroll = new LocomotiveScroll();
   const router = createBrowserRouter(
     
     createRoutesFromElements(
