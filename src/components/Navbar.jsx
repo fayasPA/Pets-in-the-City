@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faLocationDot, faSearch } from '@fortawesome/free-solid-svg-icons';
-import logo from '../../public/Assets/Images/petsinthecity.png';  
+import logo from '../../public/Assets/Images/petscity.png';  
 
 const Navbar = () => {
   return (

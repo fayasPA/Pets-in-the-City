@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { Power3 } from 'gsap';
-import logo from '../../../public/Assets/Images/petsinthecity.png';  
+import logo from '../../../public/Assets/Images/petscity.png';  
 
 
 
@@ -16,7 +16,7 @@ const PageLoader = ({ setIsLoading }) => {
         tl.fromTo(containerRef.current, { opacity: 0 }, { opacity: 1, duration: 1 });
         
         // Scale and rotate the logo
-        tl.fromTo(logoRef.current, { scale: 0, rotation: 0 }, { scale: 1, rotation: 360, duration: 2.5 });
+        tl.fromTo(logoRef.current, { scale: 0, rotation: 0 }, { scale: 2, rotation: 360, duration: 2.5 });
         
         // Bounce effect on the logo
        /*  tl.to(logoRef.current, { y: -20, repeat: -1, yoyo: true, duration: 0.3 }); */
