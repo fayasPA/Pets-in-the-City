@@ -1,7 +1,7 @@
 /* From Uiverse.io by nikk7007 */ 
 .buttonoffer {
     padding: 0.8em 1.8em;
-    border: 2px solid #f2f6f5;
+  
     position: relative;
     border-radius: 20%;
     overflow: hidden;
@@ -12,7 +12,7 @@
     transition: .3s;
     z-index: 1;
     font-family: inherit;
-    color: #e3ebea;
+    color: #ffffff;
    }
    
    .buttonoffer::before {
@@ -23,7 +23,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
-    background: #ec5ed9;
+    background: #131313;
     transition: .5s ease;
     display: block;
     z-index: -1;
@@ -34,6 +34,6 @@
    }
    
    .buttonoffer:hover {
-    color: #f6edf1;
+    color: #fdfafa;
    }
    

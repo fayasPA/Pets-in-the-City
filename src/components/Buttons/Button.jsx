@@ -3,7 +3,7 @@ import '../Buttons/Button.css'
 const Button = () => {
   return (
     <div>
-      <button className='buttonoffer font-lora'> Offers
+      <button className='buttonoffer font-lora text-xl '> Shop
       </button>
     </div>
   )

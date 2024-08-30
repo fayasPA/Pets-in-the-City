@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
-import Bannerimage from '../../../public/Assets/Images/dogcat.jpeg';
+import Bannerimage from '../../../public/Assets/Images/newdogcat.png';
 import LightButton from '../../components/LightButton';
+import Products from '../../components/Products';
 
 const Home = () => {
   useEffect(() => {
@@ -19,6 +20,7 @@ const Home = () => {
   }, []);
 
   return (
+    <>
     <div className='w-full h-screen relative'>
       <img 
         src={Bannerimage} 
@@ -32,6 +34,8 @@ const Home = () => {
         <LightButton />
       </div>
     </div>
+    <Products/>
+    </>
   );
 }
 
