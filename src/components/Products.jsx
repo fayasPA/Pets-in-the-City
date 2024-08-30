@@ -5,7 +5,7 @@ import BuyPetFoodButton from './BuyPetFoodButton';
 const Products = () => {
   return (
     <>
-    {/* first */}
+    {/* All */}
     <div className='flex flex-col md:flex-row justify-between items-center w-full h-[80vh] p-4 md:p-8 bg-white'>
       <div className='w-full md:w-[50%] flex flex-col justify-center items-start text-center md:text-left mb-6 md:mb-0'>
         <h1 className='text-3xl md:text-5xl font-semibold font-lora leading-tight'>
@@ -40,8 +40,8 @@ const Products = () => {
         <p className='mt-4 text-lg md:text-xl text-gray-700'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat soluta possimus minus rerum! Alias illum ut distinctio.
         </p>
-        <div className='mt-6 mx-auto'>
-          <Button2 />
+        <div className='mt-6 mx-auto '>
+          <img src="./Assets/Images/bone.png" alt="" className='hover:rotate-12' />
         </div>
       </div>
 
