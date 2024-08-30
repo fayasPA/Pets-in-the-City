@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
-import Bannerimage from '../../../public/Assets/Images/dogcat.jpeg'; // Ensure this path is correct
+import Bannerimage from '../../../public/Assets/Images/dogcat.jpeg';
+import LightButton from '../../components/LightButton';
 
 const Home = () => {
   useEffect(() => {
-    // GSAP Animation for text
     gsap.fromTo(
       ".animated-text",
       { opacity: 0, scale: 0.5, y: 20 },
@@ -25,10 +25,11 @@ const Home = () => {
         alt="Banner" 
         className='absolute inset-0 w-full h-full object-cover'
       />
-      <div className='absolute inset-0 flex items-center justify-center p-4'>
+      <div className='absolute inset-0 flex flex-col items-center justify-center p-4'>
         <h1 className='animated-text text-white text-3xl md:text-5xl font-bold font-lora text-center text-shadow'>
           Welcome to Pets in the City
         </h1>
+        <LightButton />
       </div>
     </div>
   );
