@@ -4,6 +4,7 @@ import { faPhone, faLocationDot, faSearch, faShoppingCart, faUser, faBars } from
 import logo from '../../public/Assets/Images/petscity.png';  
 import Button from './Buttons/Button';
 import SearchBar from './Buttons/SearchBar';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -38,11 +39,13 @@ const Navbar = () => {
     <div className="container mx-auto flex flex-wrap items-center justify-between px-4 md:px-8">
       {/* Logo */}
       <div className="flex items-center">
+      <Link to="/">
         <img src={logo} alt="Logo" className="h-10 md:h-12 rounded-full shadow-md" />
+        </Link>
       </div>
   
       {/* Search Bar */}
-      <div className="flex items-center w-full md:w-auto mt-4 md:mt-0 md:pl-32 flex-1">
+      <div className="flex items-center w-full md:w-auto mt-4 md:mt-0 md:pl-32 flex-1 opacity-0">
         <div className="relative w-full pb-4 ml-2 md:ml-0 md:pb-0">
           <SearchBar />
         </div>
@@ -87,7 +90,9 @@ const Navbar = () => {
         </div>
   
         {/* Promotions/Offers Link */}
+        <Link to="/product-listing">
         <Button />
+        </Link>
       </div>
     </div>
   
@@ -108,7 +113,9 @@ const Navbar = () => {
             <a href="/logout" className="block px-4 py-2 hover:bg-pink-100">Logout</a>
           </div>
         </div>
+        <Link to="/product-listing">
         <Button />
+        </Link>
       </div>
     )}
   </header>

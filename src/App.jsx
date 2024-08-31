@@ -9,6 +9,7 @@ import VehicleDetails from "./pages/VehicleDetails/VehicleDetails";
 import Gallery from "./pages/Gallery/Gallery";
 import SellCar from "./pages/SellCar/SellCar";
 import LocomotiveScroll from "locomotive-scroll";
+import ProductListPage from "./pages/ProductList/ProductListPage";
 
 
 
@@ -23,7 +24,7 @@ function App() {
           <Route path="" element={<UsedVehicles />} />
           <Route path=":carId/*" element={<VehicleDetails />} />
         </Route>
-        <Route path="sellcar" element={<SellCar />} />
+        <Route path="/product-listing" element={<ProductListPage />} />
         {/* <Route path="showroom" element={<Showroom />} /> */}
         <Route path="gallery" element={<Gallery />} />
         {/* <Route path="insurance" element={<Insurance />} /> */}

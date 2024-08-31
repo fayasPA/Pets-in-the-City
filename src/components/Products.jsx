@@ -1,6 +1,7 @@
 import React from 'react';
 import Button2 from './Buttons/Button2';
 import BuyPetFoodButton from './BuyPetFoodButton';
+import { Link } from 'react-router-dom';
 
 const Products = () => {
   return (
@@ -15,7 +16,9 @@ const Products = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat soluta possimus minus rerum! Alias illum ut distinctio.
         </p>
         <div className='mt-6 mx-auto'>
+        <Link to="/product-listing">
           <Button2 />
+        </Link>
         </div>
       </div>
       <div className='w-full md:w-[50%] flex justify-center md:justify-end'>
@@ -41,7 +44,11 @@ const Products = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat soluta possimus minus rerum! Alias illum ut distinctio.
         </p>
         <div className='mt-6 mx-auto '>
-          <img src="./Assets/Images/bone.png" alt="" className='hover:rotate-12' />
+        <Link to="/product-listing">
+
+          <img src="./Assets/Images/bone.png" alt="" className='hover:rotate-12 transition-all duration-200' />
+        </Link>
+
         </div>
       </div>
 
@@ -57,7 +64,11 @@ const Products = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat soluta possimus minus rerum! Alias illum ut distinctio.
         </p>
         <div className='mt-6 mx-auto'>
-          <Button2 />
+        <Link to="/product-listing">
+
+        <img src="./Assets/Images/fishicon.png" alt="" className='hover:rotate-12 transition-all duration-200' />
+        </Link>
+
         </div>
       </div>
       

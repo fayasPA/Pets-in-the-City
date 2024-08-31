@@ -3,6 +3,9 @@ import { gsap } from 'gsap';
 import Bannerimage from '../../../public/Assets/Images/newdogcat.png';
 import LightButton from '../../components/LightButton';
 import Products from '../../components/Products';
+import { Link } from 'react-router-dom';
+import ThreeProduct from '../../components/ThreeProduct';
+import About from '../About/About';
 
 const Home = () => {
   useEffect(() => {
@@ -31,10 +34,14 @@ const Home = () => {
         <h1 className='animated-text text-white text-3xl md:text-5xl font-bold font-lora text-center text-shadow'>
           Welcome to Pets in the City
         </h1>
-        <LightButton />
+        <Link to="/product-listing">
+           <LightButton />
+        </Link>
       </div>
     </div>
     <Products/>
+    <ThreeProduct/>
+    <About/>
     </>
   );
 }
