@@ -111,7 +111,7 @@ min-h-screen">
             />
           </div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {filteredProducts.map((product) => (
             <div
               className="product-card bg-white rounded-lg shadow-lg p-6 flex flex-col justify-between transform hover:scale-105 transition duration-300"

@@ -54,7 +54,7 @@ const Products = () => {
 
     </div>
     {/* cat */}
-    <div className='my-20 md:my-0 flex flex-col md:flex-row justify-between gap-5 items-center w-full h-[80vh] p-4 md:p-8 bg-white'>
+    <div className='my-36 md:my-0 flex flex-col md:flex-row justify-between gap-5 items-center w-full h-[80vh] p-4 md:p-8 bg-white'>
 
       <div className='w-full md:w-[50%] flex flex-col justify-center items-start text-center md:text-left mb-6 md:mb-0'>
         <h1 className='text-3xl md:text-5xl font-semibold font-lora leading-tight'>
